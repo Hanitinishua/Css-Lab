@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f5f0;
+            color: #333;
+        }
+        header {
+            background-color: #6d597a;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        div.background1 {
+  background: url(klematis.jpg) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+        nav ul {
+            list-style: none;
+            padding: 0;
+                        text-align: center;
+
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+                        font-size: 18px;
+
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background-color: #b56576;
+            color: white;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+          .item {
+            background-color: #e56b6f;
+            padding: 20px;
+            color: white;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+        }
+          form input, form textarea, form button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+        }
+        form button {
+            background-color: #6d597a;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+         .social-icons a {
+            margin: 0 10px;
+            color: #6d597a;
+            font-size: 24px;
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+    </style>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>My Portfolio</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="hero">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Showcasing my passion for fashion and design.</p>
+        </div>
+    </section>
+    <section id="about">
+              <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+ <h2>About Me</h2>
+    <hr class="w3-opacity">
+<p>
+Hello! I'm Hanan Ababu, a passionate fashion designer blending innovation with tradition.
+ Fashion is my language an art of self-expression and storytelling. My designs fuse artistic  
+ inspiration with cultural richness, creating pieces that are striking and meaningful. With a
+  keen eye for detail and fearless experimentation, I push the boundaries of elegance. 
+  Through my work, I aim to inspire confidence and spark connections. Thank you for exploring
+   my portfolio. Let's connect and celebrate fashion together!
+</p>
+    </section>
+    
+    <section id="portfolio">
+        <h1>My Work</h1>
+                <p>Here are some of my designs!</p>
+
+        <div class="gallery">
+      <div class="w3-row-padding" style="margin:0 -16px" >
+      <div class="w3-half">
+        <img src="b.jpeg" style="width:100%">
+        <img src="a.jpeg"style="width:100%">
+        <img src="f.webp"style="width:100%">
+         <img src="e.jpeg"style="width:100%">
+        <img src="d.jpeg"style="width:100%">
+                <img src="n.jpg"style="width:100%">
+
+        
+
+      </div>
+
+      <div class="w3-half">
+        <img src="h.jpg" style="width:100%">
+                <img src="m.jpeg" style="width:100%">
+        <img src="k.jpeg" style="width:100%">
+        <img src="l.webp" style="width:100%">
+
+            </div>
+    </div>
+
+    </section>
+    
+   
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        
+       <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Addiss Ababa, ETHIOPIA</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +25191 234 5678<p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: haniababu64@mail.com</p>
+    </div>
+    
+         <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for your message! I will get back to you soon.");
+        });
+    </script>
+</body>
+</html>
